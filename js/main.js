@@ -38,7 +38,7 @@ const fadeObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
 
 document.querySelectorAll(
-  '.about-story, .detail-card, .foundation-text-card, .pillar, .stat, .timeline-item, .press-card, .contact-card, .section-header'
+  '.about-story, .detail-card, .story-chapter, .story-quote, .foundation-text-card, .pillar, .stat, .timeline-item, .press-card, .contact-card, .section-header'
 ).forEach(el => {
   el.classList.add('fade-in');
   fadeObserver.observe(el);
